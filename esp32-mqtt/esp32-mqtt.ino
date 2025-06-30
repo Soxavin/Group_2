@@ -9,7 +9,10 @@ Adafruit_BMP280 bmp;
 
 const char* ssid = ""; // wifi name
 const char* password = ""; //wifi pw
+
 const char* mqtt_server = ""; // replace with your MQTT broker IP
+const char* mqtt_user = ""; // Only if auth is required
+const char* mqtt_pass = "";
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -26,11 +29,12 @@ void setup_wifi() {
 void reconnect() {
   while (!client.connected()) {
     Serial.print("Connecting to MQTT...");
-    if (client.connect("ESP32Client")) {
+
+    if (client.connect("ESP32Client", mqtt_user, mqtt_pass)) {
       Serial.println("connected");
     } else {
       Serial.print("failed: ");
-      Serial.print(client.state());
+      Serial.print(client.state()); 
       delay(2000);
     }
   }
