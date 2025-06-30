@@ -20,9 +20,9 @@
 
 ### 5-6. What is *MQTT*, and how do we send data from ESP32 to MQTT?
   According to the official MQTT website, *MQTT* is an OASIS standard messaging protocol for the Internet of Things (IoT). It is designed as an extremely lightweight publish/subscribe messaging transport that is ideal for connecting remote devices with a small code footprint and minimal network bandwidth. 
-  Now, to send data from ESP32 to MQTT, we will be using **Mosquitto**, which is an open-source MQTT broker.
-  ***WINDOWS:*** MQTT Broker (Mosquitto) setup:
-  Link: ![Hosting a Mosquitto Server on Windows: A Step-by-Step Tutorial](https://shop.theengs.io/blogs/news/installing-mosquitto-on-windows-and-make-it-accessible-from-your-local-network)
+  Now, to send data from ESP32 to MQTT, we will be using **Mosquitto**, which is an open-source MQTT broker.  
+  ***WINDOWS:*** MQTT Broker (Mosquitto) setup:  
+  Link: ![Hosting a Mosquitto Server on Windows: A Step-by-Step Tutorial](https://shop.theengs.io/blogs/news/installing-mosquitto-on-windows-and-make-it-accessible-from-your-local-network)  
   The website includes:
   - Installing and making Mosquitto accessible from your local network
   - Configuring Windows Firewall to allow port 1883 through to run Mosquitto properly
